@@ -413,8 +413,8 @@ skyBtn.addEventListener("click", function () {
 function playBirthdayVideo(videoNumber) {
 
     const videos = {
-        1: "videos/video1.mp4",
-        2: "videos/video2.mp4"
+        1: "video1.mp4",
+        2: "video2.mp4"
     };
 
     saraVideo.pause();
