@@ -246,6 +246,8 @@ const saraVideo = document.getElementById("saraVideo");
 
 const videoOneBtn = document.getElementById("videoOneBtn");
 const videoTwoBtn = document.getElementById("videoTwoBtn");
+const videoThreeBtn = document.getElementById("videoThreeBtn");
+
 const backVideo = document.getElementById("backVideo");
 
 
@@ -391,10 +393,8 @@ skyBtn.addEventListener("click", function () {
 
             countdown.classList.remove("show");
 
-            // Show the two video choices
             videoChoices.classList.add("show");
 
-            // Start fireworks
             startFireworks();
 
             isSurpriseRunning = false;
@@ -414,7 +414,8 @@ function playBirthdayVideo(videoNumber) {
 
     const videos = {
         1: "video1.mp4",
-        2: "video2.mp4"
+        2: "video2.mp4",
+        3: "video3.mp4"
     };
 
     saraVideo.pause();
@@ -436,17 +437,20 @@ function playBirthdayVideo(videoNumber) {
 }
 
 
-// Video One
+// ==================================
+// VIDEO BUTTONS
+// ==================================
 
 videoOneBtn.addEventListener("click", () => {
     playBirthdayVideo(1);
 });
 
-
-// Video Two
-
 videoTwoBtn.addEventListener("click", () => {
     playBirthdayVideo(2);
+});
+
+videoThreeBtn.addEventListener("click", () => {
+    playBirthdayVideo(3);
 });
 
 

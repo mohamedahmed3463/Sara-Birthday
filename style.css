@@ -800,3 +800,19 @@ h2 span { color: #e88eae; }
     }
 
 }
+
+.video-thumbnail.third {
+    background: linear-gradient(135deg, #ffe0eb, #e9ddf7);
+}
+
+.video-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+}
+
+.video-card {
+    flex: 1 1 220px;
+    max-width: 280px;
+}
